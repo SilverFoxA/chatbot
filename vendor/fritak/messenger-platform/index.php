@@ -13,6 +13,27 @@ use fritak\MessengerPlatform\Adjustment;
 
 require_once('/Applications/MAMP/htdocs/chatbot/vendor/autoload.php');
 
+
+function getWitResponse($query)
+{
+    //TODO integrate the wit.ai
+    // $response_array = array();
+    // Create a stream
+    $opts = array(
+        'http' => array(
+            'method' => "GET",
+            'header' => "Authorization: Bearer 7LVBNWN6VGXMIKTJNXBDVCDAG7AOJAQW\r\n"
+        )
+    );
+
+    $context = stream_context_create($opts);
+
+// Open the file using the HTTP headers set above
+    $file = file_get_contents('https://api.wit.ai/message?v=20161210&q=' . urlencode($query), false, $context);
+
+    return $file;
+}
+
 $userToSendMessage = 1023290824448253; // This must be an id that was retrieved through the Messenger entry points or through the Messenger callbacks.
 
 // Or you can set an object UserRecipient - you can try Customer Matching, if you have pages_messaging_phone_number permission
@@ -49,9 +70,11 @@ try {
 }
 
 $sent = false;
-if (isset($text) && !empty($text) && !$sent) {
-    //TODO integrate the api.ai
-    $bot->sendMessage($userToSendMessage, '' . $text);
+if (isset($text) && !empty($text) && !$sent && $userToSendMessage!='263369920744512') {
+
+    $val = getWitResponse($text);
+    $finalText = json_decode($val,true);
+    $bot->sendMessage($userToSendMessage, '' . $finalText['entities']['intent'][0]['value']);
     $sent = true;
     exit();
 }
