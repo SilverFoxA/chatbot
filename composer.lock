@@ -1,0 +1,58 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "ef2aceac732ea9ff8d4b531f7feb5d2d",
+    "content-hash": "860894c4f4186cc140d7baafc6bfee30",
+    "packages": [
+        {
+            "name": "fritak/messenger-platform",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Fritak/messenger-platform.git",
+                "reference": "689c56636036101240598d55322df974da069a22"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Fritak/messenger-platform/zipball/689c56636036101240598d55322df974da069a22",
+                "reference": "689c56636036101240598d55322df974da069a22",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marek Sušický",
+                    "email": "contact@fritak.eu",
+                    "homepage": "http://www.fritak.eu",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Facebook Messenger Platform PHP API for bots.",
+            "homepage": "https://github.com/fritak/messengerPlatform",
+            "time": "2016-07-20 08:33:47"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -1,0 +1,5 @@
+{
+    "require": {
+        "fritak/messenger-platform": "^1.2"
+    }
+}
