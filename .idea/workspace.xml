@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b9082449-1893-4101-8912-a131c4e47bc7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/fritak/messenger-platform/index.php" afterPath="$PROJECT_DIR$/vendor/fritak/messenger-platform/index.php" />
     </list>
     <ignored path="chatbot.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -192,12 +189,20 @@
       <option name="presentableId" value="Default" />
       <updated>1481359987666</updated>
       <workItem from="1481359989090" duration="7188000" />
-      <workItem from="1481370836323" duration="3684000" />
+      <workItem from="1481370836323" duration="3712000" />
     </task>
+    <task id="LOCAL-00001" summary="Linked to wit.ai --  NLP">
+      <created>1481376175427</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1481376175427</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10872000" />
+    <option name="totallyTimeSpent" value="10900000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="722" extended-state="6" />
@@ -232,6 +237,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Linked to wit.ai --  NLP" />
+    <option name="LAST_COMMIT_MESSAGE" value="Linked to wit.ai --  NLP" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
